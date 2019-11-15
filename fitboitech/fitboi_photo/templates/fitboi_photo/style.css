@@ -10,4 +10,6 @@ html {
 body {
     display: table-cell;
     vertical-align: middle;
+    background-image: url("https://media.giphy.com/media/fRqE6oaSmR1iE/source.gif");
+    color: white;
 }
