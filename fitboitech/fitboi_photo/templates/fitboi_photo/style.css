@@ -13,3 +13,10 @@ body {
     background-image: url("https://media.giphy.com/media/fRqE6oaSmR1iE/source.gif");
     color: white;
 }
+
+#box1 {
+width: 80%;
+height: 245px;
+margin: 0 auto;
+background-color: rgba(0,0,0,.9);
+}
