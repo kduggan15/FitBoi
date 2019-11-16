@@ -6,8 +6,17 @@ from .forms import UserForm
 
 
 def index(request):
-    context = {'test': 'HELLO THIS IS A TEST'}
-    return render(request, 'fitboi_photo/index.html', context)
+
+    if request.method == 'POST':
+        form = UserForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('success')
+    else:
+        form = UserForm()
+    return render(request, 'fitboi_photo/index.html', {'form': form})
+    # context = {'test': 'HELLO THIS IS A TEST'}
+    # return render(request, 'fitboi_photo/index.html', context)
 
 
 def user_image_view(request):

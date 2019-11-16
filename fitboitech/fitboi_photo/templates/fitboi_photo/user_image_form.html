@@ -1,12 +1,12 @@
 <!-- {% load static %} -->
 <!-- <img style="width: 245px; height: 247px;" src="{% static "fitboi_photo/pipboy.png" %}" alt="My image"/> -->
 <!-- <img style="width: 245px; height: 247px;" alt="Image description" src="../../../fitboitech/static/img/pipboy.png"/> -->
-{% if form.instance.physique_image %}
+<!-- {% if form.instance.physique_image %}
 <img style="width: 245px; height: 247px;" src="{{ form.instance.physique_image.url }}" alt="My image"/>
-{% else %}
+{% else %} -->
 {% load static %}
 <img style="width: 245px; height: 247px;" src="{% static "fitboi_photo/pipboy.png" %}" alt="My image"/>
-{% endif %}
+<!-- {% endif %} -->
 
 <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
