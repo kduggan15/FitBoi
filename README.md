@@ -40,7 +40,8 @@ Repository for Lehman Hackathon 2019
 ### Helpful dev tips
 [Working with Git Branches](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches)
 #### Safely merge branch
-- git checkout master
-- git pull origin master
-- git merge test
-- git push origin master
+
+    git checkout master
+    git pull origin master
+    git merge test
+    git push origin master
