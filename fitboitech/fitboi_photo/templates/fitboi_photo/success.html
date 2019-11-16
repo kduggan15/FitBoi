@@ -1,4 +1,24 @@
-<p>UPLOAD SUCCESSFULLY</p>
+<!-- <!DOCTYPE html>
+<html lang="en"> -->
+<head>
+        <meta charset="UTF-8">
+        <title>FitBoi.tech</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'fitboi_photo/style.css' %}" media="screen"/>
+</head>
+<body align='center'>
+<h3>UPLOADED SUCCESSFULLY</h3>
+<div id="box2">
+	<br />
+	<p>Your body type is <b>{{ bodytype }}</b>.</p> <br />
+	<p>based on your BMI of <b>{{ bmi }}</b> and body fat percentage of {{ bfat }}, 
+	you should consider:</p>
+	<p> {{ routine }} </p>
+</div>
+<br />
+<div id="box2">
+<br />
+<h4>Input</h4>
 <ul>
     <li>Feet: {{ data.feet }}</li>
     <li>Inches: {{ data.inches }}</li>
@@ -6,3 +26,5 @@
     <li>Neck: {{ data.neck }}</li>
     <li>Abdomen: {{ data.abdomen }}</li>
 </ul>
+</div>
+</body>

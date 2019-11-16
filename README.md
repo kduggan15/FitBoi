@@ -9,9 +9,12 @@ This app uses a convolution neural network to recognize your uploaded image and
 measure your body fat percentage. It does this by using django and Google's Cloud API. 
 (Revision needed)
 
-## Notes
+## To Start:
+
+    ./clear_DB.sh
     cd fitboitech
     python manage.py runserver
+    python manage.py migrate
     http://localhost:8000/fitboi
 
 ## Authors
