@@ -12,22 +12,22 @@ model = train_linear_regression(bodyfat_df,bodyfat_target)
 
 def train_linear_regression(X, y):
     """Trains and test linear regression model and returns mean_squared_error of
-    y_test and y_predicted. 
+    y_test and y_predicted.
     ----------
     X_train : array-like, shape = [n_samples, n_features]
         n_samples the number of samples
         n_features the number of features for each sample.
-        
+
     y_train : array-like, shape = [n_samples]
         n_sample target values.
-        
-    Return 
+
+    Return
         (float) mean_squared_error of (y_test and y_prediction)
 
-    
+
     """
 
     lr = LinearRegression()
     lr.fit(X, y)
-    
+
     return lr
