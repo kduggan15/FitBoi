@@ -23,3 +23,11 @@ def user_image_view(request):
 
 def success(request):
     return HttpResponse('successfully uploaded')
+    context = {'test' : 'HELLO THIS IS A TEST'}
+    return render(request, 'fitboi_photo/index.html', context)
+
+def submit(request):
+    return HttpResponse("Information Submitted")
+
+def result(request):
+    return HttpResponse("Results")
