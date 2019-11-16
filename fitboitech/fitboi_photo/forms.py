@@ -6,3 +6,4 @@ class UserForm(forms.ModelForm):
 
     class Meta:
         model = User
+        fields = ('feet','inches','weight', 'neck', 'abdomen')
