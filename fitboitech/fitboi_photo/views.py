@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
+from django.shortcuts import get_object_or_404
 from .forms import UserForm
 from .models import User
 # Create your views here.
@@ -50,9 +51,13 @@ def user_image_view(request):
 
 
 def success(request, user_id):
-    data = User.objects.get(pk=user_id)
-    print(data.feet)
-    return render(request, 'fitboi_photo/success.html')
+    # data = User.objects.get(pk=user_id)
+    data = get_object_or_404(User, pk=user_id)
+    context = {
+        'data': data
+    }
+    # print(data.feet)
+    return render(request, 'fitboi_photo/success.html', context)
     # return HttpResponse('successfully uploaded')
     # context = {'test' : 'HELLO THIS IS A TEST'}
     # return render(request, 'fitboi_photo/index.html', context)
