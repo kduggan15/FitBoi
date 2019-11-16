@@ -12,8 +12,7 @@ class User(models.Model):
     abdomen = models.FloatField(default=0.0)
 
     def __str__(self):
-<<<<<<< HEAD
-        return "Height: " + str(self.height) + "\nWeight: " + str(self.weight) + "\n"
+        return "Feet: " + str(self.feet) + "\Inches: " + str(self.inches) + "\weight: " + str(self.weight)+ "\n"
 
 class Recommended(models.Model):
     recommended_name = models.CharField(max_length=50)
@@ -29,6 +28,3 @@ class Workout(models.Model):
         return "Workout Program: " + str(self.workout_program)
 
     
-=======
-        return "Feet: " + str(self.feet) + "\Inches: " + str(self.inches) + "\weight: " + str(self.weight)+ "\n"
->>>>>>> fa8339cefa54e89bb8a1936830d7576f982d2f68
