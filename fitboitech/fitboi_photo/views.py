@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .forms import UserForm
+from .models import User
 # Create your views here.
 
 
@@ -49,7 +50,8 @@ def user_image_view(request):
 
 
 def success(request, user_id):
-    print(user_id)
+    data = User.objects.get(pk=user_id)
+    print(data.feet)
     return render(request, 'fitboi_photo/success.html')
     # return HttpResponse('successfully uploaded')
     # context = {'test' : 'HELLO THIS IS A TEST'}
