@@ -13,10 +13,7 @@ def index(request):
 def user_image_view(request):
     if request.method == 'POST':
         form = UserForm(request.POST, request.FILES)
-        # form.save()
-        #     return redirect('success')
         if form.is_valid():
-            print("IS VALIDDDDDD")
             form.save()
             return redirect('success')
     else:
