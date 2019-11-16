@@ -10,27 +10,11 @@
 	<h1>FitBoi</h1>
 	<img src="{% static "fitboi_photo/ryu.gif" %}" width="50%" height="50%" alt="picture of fitboi"
 		  id="ryu"> <br />
-	<!-- <img src="ryu.gif" width="50%" height="50%" alt="picture of fitboi"
-		  id="ryu"> <br /> -->
+
 
 	<div id="box1">
 		<br />
-		<!-- <a href="upload.html"><img src="{% static "fitboi_photo/cam2.png" %}" width="160px" height="50px"
-			alt="pic of upload button/camera icon"></a> -->
-	<!-- <a href="upload.html"><img src="cam2.png" width="160px" height="50px"
-		alt="pic of upload button/camera icon"></a> -->
 
-	<!-- <form action="setup">
-		<b>What are your goals?</b> <br />
-		<input type="radio" name="goal" value="muscle_gain">Muscle Gain!
-		<input type="radio" name="goal" value="fat_loss">Fat Loss! <br />
-		<input type="radio" name="goal" value="cardio">Cardio/Endurance!
-		<br /> <p></p>
-		Height? <input type="text" name="height"> <br />
-		Weight? <input type="text" name="weight"> <br />
-		<br />
-		<input type="submit">
-	</form> -->
 
 	<form method="post" enctype="multipart/form-data">
 		{% csrf_token %}
@@ -38,11 +22,6 @@
 		<button type="submit">Upload</button>
 	</form>
 
-	<!-- <form method="post" enctype="multipart/form-data">
-		{% csrf_token %}
-		{{ form.as_p }}
-		<button type="submit">Upload</button>
-	</form> -->
 
 	</div>
 </body>
