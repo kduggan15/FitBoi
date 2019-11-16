@@ -11,3 +11,18 @@ class User(models.Model):
 
     def __str__(self):
         return "Height: " + str(self.height) + "\nWeight: " + str(self.weight) + "\n"
+
+class Recommended(models.Model):
+    recommended_name = models.CharField(max_length=50)
+    
+    def __str__(self):
+        return "Name: " + str(self.recommended_name)
+
+class Workout(models.Model):
+    recommended_programs = models.ManyToManyField(Recommended)
+    workout_program = models.CharField(max_length=50)
+
+    def __str__(self):
+        return "Workout Program: " + str(self.workout_program)
+
+    
