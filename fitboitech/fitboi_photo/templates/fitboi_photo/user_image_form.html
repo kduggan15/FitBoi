@@ -1,0 +1,32 @@
+<!-- {% load static %} -->
+<!-- <img style="width: 245px; height: 247px;" src="{% static "fitboi_photo/pipboy.png" %}" alt="My image"/> -->
+<!-- <img style="width: 245px; height: 247px;" alt="Image description" src="../../../fitboitech/static/img/pipboy.png"/> -->
+{% if form.instance.physique_image %}
+<img style="width: 245px; height: 247px;" src="{{ form.instance.physique_image.url }}" alt="My image"/>
+{% else %}
+{% load static %}
+<img style="width: 245px; height: 247px;" src="{% static "fitboi_photo/pipboy.png" %}" alt="My image"/>
+{% endif %}
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Upload</button>
+</form>
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User Image</title>
+</head>
+
+<body>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload</button>
+    </form>
+</body>
+
+</html> -->
