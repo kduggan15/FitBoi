@@ -10,7 +10,7 @@ urlpatterns = [
     # ex: /fitboi_photo/
     path('', views.index, name='index'),
     path('upload', user_image_view, name='image_upload'),
-    path('success', success, name='success'),
+    path('success/<int:user_id>/', success, name='success'),
     # path('submit/', views.submit, name='submit'),
     # path('result/', views.result, name='result'),
 ]

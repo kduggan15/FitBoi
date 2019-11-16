@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .forms import UserForm
-
 # Create your views here.
 
 
@@ -24,12 +23,13 @@ fat_loss = {
 
 }
 def index(request):
-
+    
     if request.method == 'POST':
         form = UserForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
-            return redirect('success')
+            user = form.save()
+            print(form)
+            return redirect('success', user.pk)
     else:
         form = UserForm()
     return render(request, 'fitboi_photo/index.html', {'form': form})
@@ -48,7 +48,8 @@ def user_image_view(request):
     return render(request, 'fitboi_photo/user_image_form.html', {'form': form})
 
 
-def success(request):
+def success(request, user_id):
+    print(user_id)
     return render(request, 'fitboi_photo/success.html')
     # return HttpResponse('successfully uploaded')
     # context = {'test' : 'HELLO THIS IS A TEST'}
