@@ -16,15 +16,14 @@ class User(models.Model):
 
 class Recommended(models.Model):
     recommended_name = models.CharField(max_length=50)
-    
+
     def __str__(self):
         return "Name: " + str(self.recommended_name)
 
 class Workout(models.Model):
     recommended_programs = models.ManyToManyField(Recommended)
     workout_program = models.CharField(max_length=50)
+    workout_url = models.URLField()
 
     def __str__(self):
         return "Workout Program: " + str(self.workout_program)
-
-    
