@@ -1,2 +1,33 @@
-{% extends 'fitboi_photo/base.html' %}
-{{test}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FitBoi.tech</title>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+</head>
+<body align='center'>
+	<h1>FitBoi</h1>
+
+	<img src="ryu.gif" width="50%" height="50%" alt="picture of fitboi"
+		  id="ryu"> <br />
+
+	<div id="box1">
+		<br />
+	<a href="upload.html"><img src="cam2.png" width="160px" height="50px"
+		alt="pic of upload button/camera icon"></a>
+
+	<form action="setup">
+		<b>What are your goals?</b> <br />
+		<input type="radio" name="goal" value="muscle_gain">Muscle Gain!
+		<input type="radio" name="goal" value="fat_loss">Fat Loss! <br />
+		<input type="radio" name="goal" value="cardio">Cardio/Endurance!
+		<br /> <p></p>
+		Age? <input type="text" name="age"> <br />
+		Height? <input type="text" name="height"> <br />
+		Weight? <input type="text" name="weight"> <br />
+		<br />
+		<input type="submit">
+	</form>
+	</div>
+</body>
+</html>
