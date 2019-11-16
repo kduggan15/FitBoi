@@ -5,9 +5,11 @@ from django.db import models
 
 class User(models.Model):
     # name = models.CharField(max_length=50)
-    height = models.FloatField(default=0.0)
+    feet = models.FloatField(default=0.0)
+    inches = models.FloatField(default=0.0)
     weight = models.FloatField(default=0.0)
-    physique_image = models.ImageField(upload_to='images/')
+    neck = models.FloatField(default=0.0)
+    abdomen = models.FloatField(default=0.0)
 
     def __str__(self):
-        return "Height: " + str(self.height) + "\nWeight: " + str(self.weight) + "\n"
+        return "Feet: " + str(self.feet) + "\Inches: " + str(self.inches) + "\weight: " + str(self.weight)+ "\n"
