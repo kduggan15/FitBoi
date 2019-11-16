@@ -1,6 +1,6 @@
 # FitBoi
-![Devpost Thumbnail](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/000/890/189/datas/medium.png)
 ## Smart Physical Health Advisor
+![Devpost Thumbnail](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/000/890/189/datas/medium.png)
 
 FitBoi uses your input to measure your body fat percentage and your BMI (body mass index) and creates workout advice tailored to YOU. FitBoi is an easy tool meant to improve the physical health of its users, and encourages a more healthy lifestyle.
 
