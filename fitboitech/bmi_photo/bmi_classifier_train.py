@@ -13,14 +13,18 @@ def imshow(img):
     plt.imshow(np.transpose(npimg, (1, 2, 0)))
     plt.show()
 
+imgsize = 224
+
 data_dir = 'data/train'
 def load_split_train_test(datadir, valid_size = .2):
-    train_transforms = transforms.Compose([transforms.Resize(224),
-                                       transforms.RandomCrop(224),
+    train_transforms = transforms.Compose([transforms.Resize(imgsize),
+                                       #transforms.CenterCrop(imgsize),
+                                       transforms.Grayscale(3),
                                        transforms.ToTensor(),
                                        ])
-    test_transforms = transforms.Compose([transforms.Resize(224),
-                                       transforms.RandomCrop(224),
+    test_transforms = transforms.Compose([transforms.Resize(imgsize),
+                                       #transforms.CenterCrop(imgsize),
+                                       transforms.Grayscale(3),
                                        transforms.ToTensor(),
                                       ])
     train_data = datasets.ImageFolder(datadir,
