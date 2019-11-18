@@ -10,7 +10,7 @@ FitBoi uses your input to measure your body fat percentage and your BMI (body ma
     cd Fitboi
     ./startServer.sh
 
-Finally, open ![this link](http://localhost:8000/fitboi) in your browser.
+URL: http://localhost:8000/fitboi
 
 ## Authors
 * **Kieran** [kduggan15](https://github.com/kduggan15)
