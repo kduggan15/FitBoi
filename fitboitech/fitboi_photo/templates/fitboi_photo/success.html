@@ -7,25 +7,26 @@
         <link rel="stylesheet" type="text/css" href="{% static 'fitboi_photo/style.css' %}" media="screen"/>
 </head>
 <body align='center'>
-<h3>UPLOADED SUCCESSFULLY</h3>
-<div id="box2">
+
+			<h3>UPLOADED SUCCESSFULLY</h3>
+		<div id="box2">
 	<br />
 	<p>Your body type is <b>{{ bodytype }}</b>.</p> <br />
-	<p>based on your BMI of <b>{{ bmi }}</b> and body fat percentage of {{ bfat }},
-	you should consider:</p>
-	<p> {{ routine }} </p>
-  <p> {{ routineDesc }} </p>
-</div>
+	<p>based on your BMI of <b>{{ bmi }}</b> and body fat percentage of
+	<b>{{ bfat }}</b>, you should consider:</p>
+	<p> <b>{{ routine }}</b> </p>
+	<p> {{ routineDesc }} </p>
+		</div>
 <br />
-<div id="box2">
+		<div id="box2">
 <br />
-<h4>Input</h4>
-<ul>
-    <li>Feet: {{ data.feet }}</li>
-    <li>Inches: {{ data.inches }}</li>
-    <li>Weight: {{ data.weight }}</li>
-    <li>Neck: {{ data.neck }}</li>
-    <li>Abdomen: {{ data.abdomen }}</li>
-</ul>
-</div>
+			<h4>Input</h4>
+	<ul>
+	    <li>Feet: {{ data.feet }}</li>
+	    <li>Inches: {{ data.inches }}</li>
+	    <li>Weight: {{ data.weight }}</li>
+	    <li>Neck: {{ data.neck }}</li>
+	    <li>Abdomen: {{ data.abdomen }}</li>
+	</ul>
+		</div>
 </body>
