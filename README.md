@@ -4,21 +4,24 @@
 
 FitBoi uses your input to measure your body fat percentage and your BMI (body mass index) and creates workout advice tailored to YOU. FitBoi is an easy tool meant to improve the physical health of its users, and encourages a more healthy lifestyle.
 
-## To Start:
+## To Get Started:
 
     git clone https://github.com/kduggan15/FitBoi.git
     cd Fitboi
-    ./clear_DB.sh
-    cd fitboitech
-    python manage.py migrate
-    python manage.py runserver
-    http://localhost:8000/fitboi
+    ./startServer.sh
+
+Finally, open ![this link](http://localhost:8000/fitboi) in your browser.
 
 ## Authors
 * **Kieran** [kduggan15](https://github.com/kduggan15)
 * **Jonathan** [jontran1](https://github.com/jontran1)
 * **Michael** [msalamonski](https://github.com/msalamonski)
 * **Bon** [bonliu](https://github.com/bonliu)
+
+*side note*: if you can get us 1,000 pictures of torsos varying in 10%, 20%,
+30%, 30%+ body fat, we can easily get FitBoi to use image recognition to measure
+body fat percentage. It's all in the code and it's ready to run, we just need
+more photo samples.
 
 ---
 
@@ -43,3 +46,4 @@ FitBoi uses your input to measure your body fat percentage and your BMI (body ma
     git pull origin master
     git merge test
     git push origin master
+
